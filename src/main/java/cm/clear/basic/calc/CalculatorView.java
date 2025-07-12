@@ -433,7 +433,7 @@ public class CalculatorView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonEQUALSActionPerformed
 
     private void inputFieldKeyTyped(java.awt.event.KeyEvent evt) {                                    
-        // TODO add your handlin'g code here:
+        // TODO add your handling code here:
         char[] allowed = new char[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '/', '*', '(', ')', '.'};
         for (int i = 0; i < allowed.length; i++) {
             if (evt.getKeyChar() != (allowed[i])) {
@@ -458,10 +458,10 @@ public class CalculatorView extends javax.swing.JFrame {
     }
 
     private void processClear(){
-        String currentValue = inputField.getText();
-        if(currentValue.length() > 0){
-            String newValue = currentValue.substring(0, currentValue.length());
-            inputField.setText(newValue);
+        String newView;
+        String input = inputField.getText();
+        String output = resultLabel.getText() ;
+        if(input.length() > 0 || output.length()> 0){
         }
     }
 
